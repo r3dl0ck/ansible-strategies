@@ -1,0 +1,11 @@
+---
+- name: free strategy
+  hosts: group2
+  strategy: free
+  tasks:
+    - name: task1
+      ansible.builtin.command: "/bin/sleep {{ num1 }}"
+    - name: task2
+      ansible.builtin.command: "/bin/sleep {{ num2 }}"
+    - name: task3
+      ansible.builtin.command: "/bin/sleep {{ num3 }}"

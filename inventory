@@ -1,0 +1,16 @@
+[group1]
+srv0 ansible_host=localhost
+srv1 ansible_host=localhost
+srv2 ansible_host=localhost
+srv3 ansible_host=localhost
+srv4 ansible_host=localhost
+srv5 ansible_host=localhost
+srv6 ansible_host=localhost
+srv7 ansible_host=localhost
+srv8 ansible_host=localhost
+srv9 ansible_host=localhost
+
+# free strategy
+[group2]
+srv0 ansible_host=localhost num1=1 num2=2 num3=3
+srv1 ansible_host=localhost num1=5 num2=7 num3=8

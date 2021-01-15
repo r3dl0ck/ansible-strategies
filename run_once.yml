@@ -1,0 +1,10 @@
+---
+- name: run_once
+  hosts: group1
+  serial: 5
+  tasks:
+    - name: Upgrade DB
+      ansible.builtin.command: /bin/sleep 1
+      run_once: true
+    - name: task1
+      ansible.builtin.command: /bin/sleep 1

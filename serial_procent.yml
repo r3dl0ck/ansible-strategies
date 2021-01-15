@@ -1,0 +1,11 @@
+---
+- name: serial strategy - 50%
+  hosts: group1
+  serial: 50%
+  tasks:
+    - name: task1
+      ansible.builtin.command: /bin/sleep 1
+    - name: task2
+      ansible.builtin.command: /bin/sleep 1
+    - name: task3
+      ansible.builtin.command: /bin/sleep 1

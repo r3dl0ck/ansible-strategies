@@ -1,0 +1,11 @@
+---
+- name: serial stratege - batch 3
+  hosts: all
+  serial: 3
+  tasks:
+    - name: task1
+      ansible.builtin.command: /bin/sleep 1
+    - name: task2
+      ansible.builtin.command: /bin/sleep 1
+    - name: task3
+      ansible.builtin.command: /bin/sleep 1
